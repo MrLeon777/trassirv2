@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <!-- <base href="/"> -->
@@ -18,8 +18,10 @@
 
     <link rel="stylesheet" href="./css/app.min.css" />
     <link
-      rel="stylesheet"
-      href="/css/swiper-bundle.min.css"
+      rel="preload"
+      as="style"
+      href="./css/swiper-bundle.min.css"
+      onload="this.rel='stylesheet'"
     />
   </head>
 
@@ -43,13 +45,13 @@
           <div class="trassir-header__search">
             <input type="text" placeholder="Search..." />
             <button class="trassir-header__search-btn">
-              <img src="./images/dist/header/search.svg" loading="lazy" alt="" />
+              <img src="./images/dist/header/search.svg" width="32" height="32" loading="lazy" alt="" />
             </button>
           </div>
 
           <div class="trassir-header__lang">
             <div class="trassir-header__lang-main">
-              <img src="./images/dist/header/eng.jpg" loading="lazy" alt="" />
+              <img src="./images/dist/header/eng.jpg" width="18" height="18" loading="lazy" alt="" />
               <span>ENG</span>
               <svg
                 width="6"
@@ -67,14 +69,14 @@
 
             <div class="trassir-header__lang-block" wfd-invisible="true">
               
-              <div><a href=""><img src="./images/dist/header/rus.webp" loading="lazy" alt="" /><span>RUS</span></a></div>
-              <div><a href=""><img src="./images/dist/header/eng.jpg" loading="lazy" alt="" /><span>ENG</span></a></div>
+              <div><a href=""><img src="./images/dist/header/rus.webp" width="18" height="18" loading="lazy" alt="" /><span>RUS</span></a></div>
+              <div><a href=""><img src="./images/dist/header/eng.jpg" width="18" height="18" loading="lazy" alt="" /><span>ENG</span></a></div>
             </div>
           </div>
 
           <button class="trassir-header__menu-btn">
-            <img class="open-menu" src="./images/dist/header/toggler-menu.svg" loading="lazy" alt="" />
-            <img class="close-menu" src="./images/dist/svg/close.svg" loading="lazy" alt="" />
+            <img class="open-menu" src="./images/dist/header/toggler-menu.svg" width="32" height="32" loading="lazy" alt="" />
+            <img class="close-menu" src="./images/dist/svg/close.svg" width="32" height="32" loading="lazy" alt="" />
 
           </button>
         </div>
@@ -92,7 +94,7 @@
       style="background-image: url('./images/dist/banner-main.jpg')"
     >
       <div class="trassir-main__img-camera">
-        <img src="./images/dist/camera.svg" alt="camera" />
+        <img src="./images/dist/camera.svg" width="806" height="550" alt="camera" />
       </div>
 
       <div class="container">
@@ -130,7 +132,7 @@
       style="background-image: url('./images/dist/banner-main.jpg')"
     >
       <div class="trassir-main__img-camera">
-        <img src="./images/dist/camera.svg" alt="camera" />
+        <img src="./images/dist/camera.svg" width="806" height="550" alt="camera" />
       </div>
 
       <div class="container">
@@ -543,8 +545,8 @@ Video Surveillance and access control <br> software</p>
     </div>
 </footer>
 
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/app.min.js"></script>
+<script defer src="js/jquery-3.6.0.min.js"></script>
+<script defer src="js/swiper-bundle.min.js"></script>
+<script defer src="js/app.min.js"></script>
 </body>
 </html>
