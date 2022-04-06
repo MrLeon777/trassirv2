@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <!-- <base href="/"> -->
@@ -18,8 +18,10 @@
 
     <link rel="stylesheet" href="./css/app.min.css" />
     <link
-      rel="stylesheet"
-      href="/css/swiper-bundle.min.css"
+      rel="preload"
+      as="style"
+      href="./css/swiper-bundle.min.css"
+      onload="this.rel='stylesheet'"
     />
   </head>
 
@@ -86,9 +88,37 @@
 
 <main>
 
+  <section
+  class="company-banner"
+  style="background-image: url('./images/dist/company-banner/banner.jpg')"
+>
+  <div class="container">
+    <div class="company-banner__wrapper">
+      <div class="company-banner__wrapper-img">
+        <img src="./images/dist/company-banner/banner-mobile.jpg" alt="" />
+      </div>
+      <div class="company-banner__wrapper-text">
+        <h1>What we do</h1>
+        <p>
+          Since foundation we are focused on providing the clients with
+          innovative still user-friendly and accurate video security systems.
+          These are not just words.
+        </p>
+        <br>
+        <p>
+          We develop software and manufacture our own hardware in order to
+          obtain astonishing productivity. Each client may satisfy its security
+          needs whether its a simple camera or high end innovative security
+          solution with AI. And all of that with unbelievable price and support
+          policy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
   
-  
-  <div class="trassir-statisctics">
+  <section class="trassir-statisctics">
     <div class="container-small">
         <ul class="trassir-statisctics__list">
             <li>
@@ -117,9 +147,9 @@
             </li>
         </ul>
     </div>
-</div>
+</section>
 
-  <div class="trassir-leaders">
+  <section class="trassir-leaders">
     <div class="container-small">
         <h1>Trusted by industry leaders</h1>
         <ul class="trassir-leaders__list">
@@ -135,9 +165,9 @@
         <p>and 5000 more</p>
         <a href="" class="btn btn-red btn-bg_none">Recent cases</a>
     </div>
-</div>
+</section>
 
-  <div class="trassir-team">
+  <section class="trassir-team">
   <div class="container">
     <h1>Meet our team</h1>
     <div class="trassir-team__wrapper">
@@ -170,26 +200,6 @@
         <div class="swiper-slide">
           <div class="trassir-team__wrapper-img">
             <img src="./images/dist/team/1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="trassir-team__wrapper-img">
-            <img src="./images/dist/team/2.jpg" alt="" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="trassir-team__wrapper-img">
-            <img src="./images/dist/team/3.jpg" alt="" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="trassir-team__wrapper-img">
-            <img src="./images/dist/team/4.jpg" alt="" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="trassir-team__wrapper-img">
-            <img src="./images/dist/team/5.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -230,18 +240,18 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 
   <a href="" class="btn btn-red btn-bg_none btn-center">Recent news</a>
 
-  <div class="trassir-leadership">
+  <section class="trassir-leadership">
   <div class="container">
     <h1>Thoughtfull leadership</h1>
     <div class="trassir-leadership__wrapper">
       <div class="trassir-leadership__wrapper-leader">
         <div class="trassir-leadership__wrapper-leader_img">
-          <img src="./images/dist/leadership/oleg.png" alt="" />
+          <img src="./images/dist/leadership/oleg.png" loading="lazy" alt="" />
         </div>
         <div class="trassir-leadership__wrapper-leader_title">
           <span>Igor Oleynik</span>
@@ -256,6 +266,7 @@
           way that the company has had such a strong focus on the desire to
           drive progress.
         </p>
+        <br>
         <p>
           Thanks to an amazing team of experienced developers, data-obsessed
           experts and our network of forward-thinking partners we deliver superb
@@ -267,7 +278,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
   
   <section class="trassir-help bgc-none">
@@ -391,8 +402,8 @@
     </div>
 </footer>
 
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/app.min.js"></script>
+<script defer src="js/jquery-3.6.0.min.js"></script>
+<script defer src="js/swiper-bundle.min.js"></script>
+<script defer src="js/app.min.js"></script>
 </body>
 </html>
