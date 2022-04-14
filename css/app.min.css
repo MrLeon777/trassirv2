@@ -3050,6 +3050,11 @@ button {
     padding: 60px 0 80px 0;
   }
 }
+@media (max-width: 430px) {
+  .trassir-updates {
+    padding: 40px 0;
+  }
+}
 .trassir-updates__wrapper-item {
   margin-bottom: 17px;
 }
