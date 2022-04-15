@@ -50,6 +50,7 @@
 body {
   font-family: "Inter", sans-serif;
   min-width: 320px;
+  overflow: hidden scroll;
   position: relative;
   overflow-x: hidden;
   color: #232323;
@@ -2074,7 +2075,7 @@ button {
 }
 
 .trassir-convenience {
-  padding: 165px 0;
+  padding: 100px 0;
 }
 @media (max-width: 1024px) {
   .trassir-convenience {
@@ -2769,9 +2770,9 @@ button {
 
 .trassir-map {
   position: relative;
-  background-color: #f9fbff;
   margin-top: -140px;
   padding-top: 140px;
+  z-index: 1;
 }
 @media (max-width: 1024px) {
   .trassir-map {
@@ -2783,7 +2784,7 @@ button {
   .trassir-map:after {
     position: absolute;
     content: "";
-    bottom: -18px;
+    bottom: -21px;
     left: 0;
     z-index: -1;
     width: 100%;
@@ -2805,6 +2806,7 @@ button {
 .trassir-map__wrapper-img {
   height: 394px;
   background-image: url("../images/dist/map.png");
+  background-size: cover;
 }
 @media (max-width: 1024px) {
   .trassir-map__wrapper-img {
